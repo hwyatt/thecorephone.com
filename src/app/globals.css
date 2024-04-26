@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-overlay {
+  background-color: #284b63; /* Your desired overlay color */
+  opacity: 0.75; /* Adjust the opacity as needed */
+}
