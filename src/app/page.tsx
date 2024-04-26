@@ -10,7 +10,12 @@ export default function Home() {
       </div>
       <div className="absolute inset-0 bg-overlay"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 items-center">
-        <Image src="/logo.png" width={500} height={100} />
+        <Image
+          src="/logo.png"
+          width={500}
+          height={100}
+          alt="the core phone logo"
+        />
         <span className="font-extralight">coming soon to the app store</span>
       </div>
     </main>
