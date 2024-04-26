@@ -16,7 +16,9 @@ export default function Home() {
           height={100}
           alt="the core phone logo"
         />
-        <span className="font-extralight">coming soon to the app store</span>
+        <span className="text-sm md:text-base font-extralight text-center">
+          coming soon to the app store
+        </span>
       </div>
     </main>
   );
