@@ -17,8 +17,8 @@ export default function Home() {
             height={100}
             alt="the core phone logo"
           />
-          <span className="text-sm md:text-base font-extralight text-center">
-            your phone was made to serve you, not the other way around
+          <span className="text-base md:text-lg font-extralight text-center">
+            life beyond the screen is calling
           </span>
         </div>
       </section>
@@ -33,14 +33,18 @@ export default function Home() {
             <p className="text-lg">Hide Addicting and Distracting Apps from your Phone</p>
             <p className="text-lg">Lock your Phone in a Minimalist state</p>
             <p className="text-lg">Have a Friend lock your Phone with a PIN</p>
-            <p className="text-lg">Lock your Phone with a <strong className="font-semibold text-brand">Core Card</strong> and leave it behind</p>
+            <p className="text-lg">Use a <strong className="font-semibold text-brand">Core Card</strong> to lock your Phone</p>
+            <p className="text-lg">Set a timer to lock your Phone until that date/time</p>
+            <p className="text-lg">Designed simply to mimic a utility</p>
           </div>
           <h2 className="text-4xl font-semibold text-brand mt-4">why?</h2>
-          <div className="flex flex-col gap-2">
-            <p className="text-lg">Hide Addicting and Distracting Apps from your Phone</p>
-            <p className="text-lg">Lock your Phone in a Minimalist state</p>
-            <p className="text-lg">Have a Friend lock your Phone with a PIN</p>
-            <p className="text-lg">Lock your Phone with a <strong className="font-semibold text-brand">Core Card</strong> and leave it behind</p>
+          <div className="flex flex-col gap-2 max-w-[768px]" >
+            <p className="text-md">As a Software Engineer, I have seen firsthand the negative impacts of the smartphone. 
+            Screen addiction is real, and it takes you away from the life you want to live.
+            If you're like me, you've tried to minimalize your iPhone and it never sticks. 
+            Or maybe you've tried some of the popular "dumb phones", but they made easy things (like texting and calling) hard. 
+            </p>
+            <p className="text-md">That's why I created The Core Phone app. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your phone with a PIN, or by locking with a Core Card and leaving it behind, but you never have to give up control to big tech again.</p>
           </div>
           </div>
           <div className="mockup-phone border-brand">
@@ -62,7 +66,7 @@ export default function Home() {
     Click to open this one and close others
   </div>
   <div className="collapse-content"> 
-    <p className="font-semibold">hello</p>
+    <p className="font-semibold text-lg">hello</p>
   </div>
 </div>
 <div className="collapse collapse-arrow bg-brand-alt">
@@ -71,7 +75,7 @@ export default function Home() {
     Click to open this one and close others
   </div>
   <div className="collapse-content"> 
-    <p className="font-semibold">hello</p>
+    <p className="font-semibold text-lg">hello</p>
   </div>
 </div>
 <div className="collapse collapse-arrow bg-brand-alt">
@@ -80,7 +84,7 @@ export default function Home() {
     Click to open this one and close others
   </div>
   <div className="collapse-content"> 
-    <p className="font-semibold">hello</p>
+    <p className="font-semibold text-lg">hello</p>
   </div>
 </div>
           </div>
