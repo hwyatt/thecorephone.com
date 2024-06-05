@@ -32,11 +32,27 @@ body {
   }
 }
 
+.text-brand {
+  color: #284b63;
+}
+
 .bg-brand {
   background-color: #284b63;
+}
+
+.bg-brand-alt {
+  background-color: #1E3748;
 }
 
 .bg-overlay {
   background-color: #284b63; /* Your desired overlay color */
   opacity: 0.85; /* Adjust the opacity as needed */
+}
+
+.main-bg {
+  background-color: #d9d9d9;
+}
+
+.border-brand {
+  border-color: #284b63
 }
