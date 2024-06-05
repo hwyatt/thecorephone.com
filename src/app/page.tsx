@@ -39,12 +39,12 @@ export default function Home() {
           </div>
           <h2 className="text-4xl font-semibold text-brand mt-4">why?</h2>
           <div className="flex flex-col gap-2 max-w-[768px]" >
-            <p className="text-md">As a Software Engineer, I have seen firsthand the negative impacts of the smartphone. 
+            <p className="text-md">{`As a Software Engineer, I have seen firsthand the negative impacts of the smartphone. 
             Screen addiction is real, and it takes you away from the life you want to live.
             If you're like me, you've tried to minimalize your iPhone and it never sticks. 
-            Or maybe you've tried some of the popular "dumb phones", but they made easy things (like texting and calling) hard. 
+            Or maybe you've tried some of the popular "dumb phones", but they made easy things (like texting and calling) hard.`}
             </p>
-            <p className="text-md">That's why I created The Core Phone app. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your phone with a PIN, or by locking with a Core Card and leaving it behind, but you never have to give up control to big tech again.</p>
+            <p className="text-md">{`That's why I created The Core Phone app. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your phone with a PIN, or by locking with a Core Card and leaving it behind, but you never have to give up control to big tech again.`}</p>
           </div>
           </div>
           <div className="mockup-phone border-brand">
