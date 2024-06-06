@@ -120,7 +120,13 @@ export default function Home() {
             </p>
             <div className="flex justify-between gap-8">
               <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
-                <figure className="bg-white border-brand border-t-4 border-x-4">
+                <figure
+                  className="border-brand border-t-4 border-x-4"
+                  style={{
+                    background:
+                      "radial-gradient(circle, white 0%, white 40%, #d9d9d9 80%)",
+                  }}
+                >
                   <img src={`/coreCard-PVC.png`} alt="The Core Card" />
                 </figure>
                 <div className="card-body bg-brand rounded-b-lg">
@@ -138,7 +144,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
-                <figure className="bg-white border-brand border-t-4 border-x-4">
+                <figure
+                  className="border-brand border-t-4 border-x-4"
+                  style={{
+                    background:
+                      "radial-gradient(circle, white 0%, white 40%, #d9d9d9 80%)",
+                  }}
+                >
                   <img
                     src={`/coreCard-Bamboo.png`}
                     alt="The Core Card - Bamboo"
