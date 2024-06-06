@@ -3,33 +3,34 @@ import Image from "next/image";
 const FAQs = [
   {
     id: 0,
-    title: 'What happens when I turn Core Phone on?',
-    desc: `We use technology native to Apple to hide apps from your phone. Hiding apps is simply just that. Whenever you turn Core Phone off, all of your app data is still intact.`
+    title: "What happens when I turn Core Phone on?",
+    desc: `We use technology native to Apple to hide apps from your phone. Hiding apps is simply just that. Whenever you turn Core Phone off, all of your app data is still intact.`,
   },
   {
     id: 1,
-    title: 'What is CorePhone+?',
-    desc: `CorePhone+ is our affordable subscription service that allows you to hide up to 50 apps and lock your phone in Core mode with a PIN, a Core Card, or until a certain date/time. You can also order customized Core Cards / Tags (NFC Cards and Tags).`
+    title: "What is CorePhone+?",
+    desc: `CorePhone+ is our affordable subscription service that allows you to hide up to 50 apps and lock your phone in Core mode with a PIN, a Core Card, or until a certain date/time. You can also order customized Core Cards / Tags (NFC Cards and Tags).`,
   },
   {
     id: 2,
-    title: 'What is the Core Card?',
-    desc: `The Core Card is a physical card that you can tap with your app to lock your phone in Core mode. You can leave the Core Card behind and go live life.`
+    title: "What is the Core Card?",
+    desc: `The Core Card is a physical card that you can tap with your app to lock your phone in Core mode. You can leave the Core Card behind and go live life.`,
   },
   {
     id: 3,
-    title: 'Do I have to have a Core Card?',
-    desc: `Nope! You can also lock your phone with a PIN or lock until a specific date/time. Or you don't have to lock at all!`
+    title: "Do I have to have a Core Card?",
+    desc: `Nope! You can also lock your phone with a PIN or lock until a specific date/time. Or you don't have to lock at all!`,
   },
   {
     id: 4,
-    title: 'What does Locked mean?',
-    desc: `Locked simply means that your Core Phone app is locked to ON by the method in which you locked it. In order to unlock, you will need to use the same method (PIN, Core Card) or purchase an emergency unlock.`
+    title: "What does Locked mean?",
+    desc: `Locked simply means that your Core Phone app is locked to ON by the method in which you locked it. In order to unlock, you will need to use the same method (PIN, Core Card) or purchase an emergency unlock.`,
   },
   {
     id: 5,
-    title: 'My phone is Locked and I lost the PIN or the Core Card. What do I do?',
-    desc: `You can purchase an emergency unlock in the app at any time. If you still need help, you can also contact us!`
+    title:
+      "My phone is Locked and I lost the PIN or the Core Card. What do I do?",
+    desc: `You can purchase an emergency unlock in the app at any time. If you still need help, you can also contact us!`,
   },
 ];
 
@@ -55,20 +56,36 @@ export default function Home() {
           </span>
         </div>
       </section>
-      
+
       <section className="pt-16 pb-16 main-bg text-gray-800">
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
           <div className="flex gap-16">
             <div className="flex flex-col gap-4">
               <h2 className="text-4xl font-semibold text-brand">features</h2>
               <div className="flex flex-col gap-2">
-                <p className="text-lg">Hide Addictive and Distracting Apps from your Phone</p>
-                <p className="text-lg">Lock your Phone in a Minimalist state*</p>
-                <p className="text-lg">Have a Friend lock your Phone with a PIN*</p>
-                <p className="text-lg">Use a <strong className="font-semibold text-brand">Core Card</strong> to lock your Phone*</p>
-                <p className="text-lg">Set a timer to lock your Phone until that date/time*</p>
+                <p className="text-lg">
+                  Hide Addictive and Distracting Apps from your Phone
+                </p>
+                <p className="text-lg">
+                  Lock your Phone in a Minimalist state*
+                </p>
+                <p className="text-lg">
+                  Have a Friend lock your Phone with a PIN*
+                </p>
+                <p className="text-lg">
+                  Use a{" "}
+                  <strong className="font-semibold text-brand">
+                    Core Card
+                  </strong>{" "}
+                  to lock your Phone*
+                </p>
+                <p className="text-lg">
+                  Set a timer to lock your Phone until that date/time*
+                </p>
                 <p className="text-lg">Designed simply to mimic a utility</p>
-                <p className="text-sm mt-2">*Some features are only available for CorePhone+*</p>
+                <p className="text-sm mt-2">
+                  *Some features are only available for CorePhone+*
+                </p>
               </div>
               <h2 className="text-4xl font-semibold text-brand mt-4">why?</h2>
               <div className="flex flex-col gap-2 max-w-[768px]">
@@ -77,33 +94,76 @@ export default function Home() {
               </div>
             </div>
             <div className="mockup-phone border-brand">
-              <div className="camera"></div> 
+              <div className="camera"></div>
               <div className="display">
-                <div className="artboard artboard-demo phone-1">Demo of the app will go here</div>
+                <div className="artboard artboard-demo phone-1">
+                  Demo of the app will go here
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="pt-16 pb-16 main-bg text-gray-800">
+      <section className="pt-16 pb-16 main-bg text-gray-800 border-brand border-t-4">
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
           <div className="flex flex-col gap-4 items-center">
-            <h2 className="text-4xl font-semibold text-brand mb-4">the core card</h2>
-            <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
-  <figure><img src={`https://taptag.shop/cdn/shop/products/sustainable-cherry-nfc-business-card-194915.jpg?v=1695228186&width=800`} alt="The Core Card" /></figure>
-  <div className="card-body bg-brand rounded-b-lg">
-    <h2 className="card-title text-white font-semibold">
-      The Core Card 
-        <span className="font-light" style={{ color: "#d9d9d9" }}>
-          (Bamboo)
-        </span>
-    </h2>
-    <p className="text-white">The Core Card is designed to curb digital addiction and encourage real-life experiences. It locks The Core Phone app, hiding addictive and distracting apps, ensuring you stay in the moment. This lock can only be released with the Core Card, allowing you to leave the card behind and fully immerse yourself in life without the constant pull of digital distractions.</p>
-    <div className="card-actions justify-end">
-      <button className="bg-white text-brand font-semibold rounded-lg px-6 py-4">Buy Now</button>
-    </div>
-  </div>
-</div>
+            <h2 className="text-4xl font-semibold text-brand mb-4">
+              the core card
+            </h2>
+            <p className="text-gray-800 text-center mb-4">
+              The Core Card is designed to curb digital addiction and encourage
+              real-life experiences. It locks The Core Phone app, hiding
+              addictive and distracting apps, ensuring you stay in the moment.
+              This lock can only be released with the Core Card, allowing you to
+              leave the card behind and fully immerse yourself in life without
+              the constant pull of digital distractions.
+            </p>
+            <div className="flex justify-between gap-8">
+              <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
+                <figure className="bg-white border-brand border-t-4 border-x-4">
+                  <img src={`/coreCard-PVC.png`} alt="The Core Card" />
+                </figure>
+                <div className="card-body bg-brand rounded-b-lg">
+                  <h2 className="card-title text-white font-semibold">
+                    The Core Card
+                  </h2>
+                  <p className="text-white">
+                    The standard version of Core Card, made of PVC
+                  </p>
+                  <div className="card-actions justify-end mt-8">
+                    <button className="bg-white text-brand font-semibold rounded-lg px-6 py-4">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
+                <figure className="bg-white border-brand border-t-4 border-x-4">
+                  <img
+                    src={`/coreCard-Bamboo.png`}
+                    alt="The Core Card - Bamboo"
+                    style={{ transform: "scale(1.15)" }}
+                  />
+                </figure>
+                <div className="card-body bg-brand rounded-b-lg">
+                  <h2 className="card-title text-white font-semibold">
+                    The Core Card
+                    <span className="font-light" style={{ color: "#d9d9d9" }}>
+                      (Bamboo)
+                    </span>
+                  </h2>
+                  <p className="text-white">
+                    The deluxe version of Core Card, made of Bamboo and has your
+                    name
+                  </p>
+                  <div className="card-actions justify-end mt-8">
+                    <button className="bg-white text-brand font-semibold rounded-lg px-6 py-4">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* <div className="flex gap-8 md:grid md:grid-cols-2">
               <img
                 src={`https://taptag.shop/cdn/shop/products/sustainable-cherry-nfc-business-card-194915.jpg?v=1695228186&width=800`}
@@ -126,12 +186,15 @@ export default function Home() {
             <h2 className="text-4xl font-semibold text-white mb-4">faqs</h2>
             {FAQs.map((faq) => {
               return (
-                <div className="collapse collapse-arrow bg-brand-alt" key={faq.id}>
-                  <input type="radio" name="my-accordion-2" defaultChecked /> 
+                <div
+                  className="collapse collapse-arrow bg-brand-alt"
+                  key={faq.id}
+                >
+                  <input type="radio" name="my-accordion-2" defaultChecked />
                   <div className="collapse-title text-lg font-light">
                     {faq.title}
                   </div>
-                  <div className="collapse-content"> 
+                  <div className="collapse-content">
                     <p className="font-semibold text-lg">{faq.desc}</p>
                   </div>
                 </div>
