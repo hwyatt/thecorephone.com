@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="pt-16 pb-8 main-bg text-gray-800">
+      <section className="pt-16 pb-16 main-bg text-gray-800">
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
           <div className="flex gap-16">
             <div className="flex flex-col gap-4">
@@ -85,10 +85,45 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="pt-16 pb-16 main-bg text-gray-800">
+        <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
+          <div className="flex flex-col gap-4 items-center">
+            <h2 className="text-4xl font-semibold text-brand mb-4">the core card</h2>
+            <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
+  <figure><img src={`https://taptag.shop/cdn/shop/products/sustainable-cherry-nfc-business-card-194915.jpg?v=1695228186&width=800`} alt="The Core Card" /></figure>
+  <div className="card-body bg-brand rounded-b-lg">
+    <h2 className="card-title text-white font-semibold">
+      The Core Card 
+        <span className="font-light" style={{ color: "#d9d9d9" }}>
+          (Bamboo)
+        </span>
+    </h2>
+    <p className="text-white">The Core Card is designed to curb digital addiction and encourage real-life experiences. It locks The Core Phone app, hiding addictive and distracting apps, ensuring you stay in the moment. This lock can only be released with the Core Card, allowing you to leave the card behind and fully immerse yourself in life without the constant pull of digital distractions.</p>
+    <div className="card-actions justify-end">
+      <button className="bg-white text-brand font-semibold rounded-lg px-6 py-4">Buy Now</button>
+    </div>
+  </div>
+</div>
+            {/* <div className="flex gap-8 md:grid md:grid-cols-2">
+              <img
+                src={`https://taptag.shop/cdn/shop/products/sustainable-cherry-nfc-business-card-194915.jpg?v=1695228186&width=800`}
+              
+                alt="the core phone logo"
+              />
+              <div className="flex flex-col justify-between">
+              <p className="text-brand text-lg">
+                The Core Card is designed to curb digital addiction and encourage real-life experiences. It locks The Core Phone app, hiding addictive and distracting apps, ensuring you stay in the moment. This lock can only be released with the Core Card, allowing you to leave the card behind and fully immerse yourself in life without the constant pull of digital distractions.
+              </p>
+              <button className="bg-brand w-full p-6 font-semibold text-white">Order Now</button>
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
       <section className="p-8 bg-brand text-white">
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
           <div className="flex flex-col gap-4 items-center text-center">
-            <h2 className="text-4xl font-semibold text-white">faqs</h2>
+            <h2 className="text-4xl font-semibold text-white mb-4">faqs</h2>
             {FAQs.map((faq) => {
               return (
                 <div className="collapse collapse-arrow bg-brand-alt" key={faq.id}>
