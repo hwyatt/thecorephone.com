@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SocialIcon } from "react-social-icons";
 
 const FAQs = [
   {
@@ -35,6 +36,8 @@ const FAQs = [
 ];
 
 export default function Home() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="main-bg">
       <section className="min-h-screen flex flex-col justify-center items-center bg-brand p-8 relative">
@@ -96,7 +99,7 @@ export default function Home() {
                 Get the App
               </button>
             </div>
-            <div className="md:min-w-[400px]">
+            <div className="hidden md:block md:min-w-[400px]">
               <div className="mockup-phone border-brand">
                 <div className="camera"></div>
                 <div className="display">
@@ -217,6 +220,42 @@ export default function Home() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+      <section className="main-bg p-8 text-white">
+        <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
+          <div className="flex flex-col gap-4 items-center text-center">
+            <h2 className="text-brand font-semibold text-2xl">
+              connect with us
+            </h2>
+            <div className="flex gap-4">
+              <SocialIcon
+                url="https://www.instagram.com/thecorephone"
+                bgColor="#284b63"
+              />
+              <SocialIcon url="https://x.com/thecorephone" bgColor="#284b63" />
+              <SocialIcon
+                url="mailto:thecorephonesocials@gmail.com"
+                bgColor="#284b63"
+              />
+            </div>
+          </div>
+          <div className="text-gray-600 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between text-sm md:text-md gap-4 mx-auto mt-8">
+            <div>
+              <span className="text-xs md:text-sm">
+                ©{currentYear} The Core Phone
+              </span>
+            </div>
+            <div className="flex gap-4">
+              <a href="/terms" className="hover:text-gray-600">
+                Terms of Use
+              </a>
+              <div className="md:hidden text-gray-400">|</div>
+              <a href="/contact" className="hover:text-gray-600">
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </section>
