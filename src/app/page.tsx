@@ -92,12 +92,17 @@ export default function Home() {
                 <p className="text-md">{`As a Software Engineer, I have seen firsthand the negative impacts of the smartphone. Screen addiction is real, and it takes you away from the life you want to live. If you're like me, you've tried to minimalize your iPhone and it never sticks. Or maybe you've tried some of the popular "dumb phones", but they made easy things (like texting and calling) hard.`}</p>
                 <p className="text-md">{`That's why I created The Core Phone app. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your phone with a PIN, or by locking with a Core Card and leaving it behind, but you never have to give up control to big tech again.`}</p>
               </div>
+              <button className="bg-brand text-white font-semibold rounded-lg px-6 py-4 w-full mt-8">
+                Get the App
+              </button>
             </div>
-            <div className="mockup-phone border-brand">
-              <div className="camera"></div>
-              <div className="display">
-                <div className="artboard artboard-demo phone-1">
-                  Demo of the app will go here
+            <div className="md:min-w-[400px]">
+              <div className="mockup-phone border-brand">
+                <div className="camera"></div>
+                <div className="display">
+                  <div className="artboard artboard-demo phone-4">
+                    <img src="/test.png" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -118,7 +123,7 @@ export default function Home() {
               leave the card behind and fully immerse yourself in life without
               the constant pull of digital distractions.
             </p>
-            <div className="flex justify-between gap-8">
+            <div className="flex flex-col md:flex-row justify-between gap-8">
               <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
                 <figure
                   className="border-brand border-t-4 border-x-4"
