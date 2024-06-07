@@ -138,16 +138,26 @@ export default function Home() {
                   <img src={`/coreCard-PVC.png`} alt="The Core Card" />
                 </figure>
                 <div className="card-body bg-brand rounded-b-lg">
-                  <h2 className="card-title text-white font-semibold">
-                    The Core Card
-                  </h2>
-                  <p className="text-white">
+                  <div className="flex justify-between w-full gap-4">
+                    <h2 className="card-title text-white font-semibold">
+                      The Core Card
+                    </h2>
+                    <p className="text-lg text-white font-semibold text-right">
+                      $24.95
+                    </p>
+                  </div>
+                  <p style={{ color: "#d9d9d9" }}>
                     The standard version of Core Card, made of PVC
                   </p>
                   <div className="card-actions justify-end mt-8">
-                    <button className="bg-white text-brand font-semibold rounded-lg px-6 py-4">
-                      Order Now
-                    </button>
+                    <a
+                      href="https://taptag.shop/products/z-corephone?sca_ref=6340235.ACzs4PsiSY"
+                      target="_blank"
+                    >
+                      <button className="bg-white text-brand font-semibold rounded-lg px-6 py-4">
+                        Order Now
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -166,20 +176,27 @@ export default function Home() {
                   />
                 </figure>
                 <div className="card-body bg-brand rounded-b-lg">
-                  <h2 className="card-title text-white font-semibold">
-                    The Core Card
-                    <span className="font-light" style={{ color: "#d9d9d9" }}>
-                      (Bamboo)
-                    </span>
-                  </h2>
-                  <p className="text-white">
+                  <div className="flex justify-between w-full gap-4">
+                    <h2 className="card-title text-white font-semibold">
+                      The Core Card Deluxe
+                    </h2>
+                    <p className="text-lg text-white font-semibold text-right">
+                      $29.95
+                    </p>
+                  </div>
+                  <p style={{ color: "#d9d9d9" }}>
                     The deluxe version of Core Card, made of Bamboo and has your
                     name
                   </p>
                   <div className="card-actions justify-end mt-8">
-                    <button className="bg-white text-brand font-semibold rounded-lg px-6 py-4">
-                      Order Now
-                    </button>
+                    <a
+                      href="https://taptag.shop/products/corephone-bamboo-tap-card?sca_ref=6340235.ACzs4PsiSY"
+                      target="_blank"
+                    >
+                      <button className="bg-white text-brand font-semibold rounded-lg px-6 py-4">
+                        Order Now
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
