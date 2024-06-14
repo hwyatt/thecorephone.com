@@ -41,7 +41,7 @@ const FAQs = [
   {
     id: 7,
     title: "I need help. What do I do?",
-    desc: `You can reach us by email at thecorephonesocials@gmail.com! Make sure to copy/paste the user ID found in the help screen of the Core Phone app.`,
+    desc: `You can reach us by email at hello@thecorephone.com! Make sure to copy/paste the user ID found in the help screen of the Core Phone app.`,
   },
 ];
 
@@ -280,7 +280,7 @@ export default function Home() {
               />
               <SocialIcon url="https://x.com/thecorephone" bgColor="#284b63" />
               <SocialIcon
-                url="mailto:thecorephonesocials@gmail.com"
+                url="mailto:hello@thecorephone.com"
                 bgColor="#284b63"
               />
             </div>
@@ -296,7 +296,10 @@ export default function Home() {
                 Terms of Use
               </a>
               <div className="md:hidden text-gray-400">|</div>
-              <a href="/contact" className="hover:text-gray-600">
+              <a
+                href="mailto:hello@thecorephone.com"
+                className="hover:text-gray-600"
+              >
                 Contact Us
               </a>
             </div>
