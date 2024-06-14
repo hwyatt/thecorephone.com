@@ -5,12 +5,12 @@ const FAQs = [
   {
     id: 0,
     title: "What happens when I turn Core Phone on?",
-    desc: `We use technology native to Apple to hide apps from your phone. Hiding apps is simply just that. Whenever you turn Core Phone off, all of your app data is still intact.`,
+    desc: `We use technology native to Apple iOS to hide apps from your phone. Hiding apps is simply just that. Whenever you turn Core Phone off, all of your app data is still intact. *Note that because of an open issue with Apple that your apps may not return to their original folder or dock location after unhiding them. For best results, we recommend relying more heavily on the app library rather than folders.`,
   },
   {
     id: 1,
     title: "What is CorePhone+?",
-    desc: `CorePhone+ is our affordable subscription service that allows you to hide up to 50 apps and lock your phone in Core mode with a PIN, a Core Card, or until a certain date/time. You can also order customized Core Cards / Tags (NFC Cards and Tags).`,
+    desc: `CorePhone+ is our affordable subscription service that allows you to hide up to 50 apps and lock your phone in Core mode with a PIN, a Core Card, or until a certain date/time. You can also order The Core Card and customizeable tags.`,
   },
   {
     id: 2,
@@ -25,13 +25,23 @@ const FAQs = [
   {
     id: 4,
     title: "What does Locked mean?",
-    desc: `Locked simply means that your Core Phone app is locked to ON by the method in which you locked it. In order to unlock, you will need to use the same method (PIN, Core Card) or purchase an emergency unlock.`,
+    desc: `Locked simply means that your Core Phone app is locked to ON by the method in which you locked it. In order to unlock, you will need to use the same method (PIN, Core Card, wait for the Timer to expire) or purchase an emergency unlock. If you're still having issues, contact us!`,
   },
   {
     id: 5,
     title:
       "My phone is Locked and I lost the PIN or the Core Card. What do I do?",
     desc: `You can purchase an emergency unlock in the app at any time. If you still need help, you can also contact us!`,
+  },
+  {
+    id: 6,
+    title: "Why Anonymous Accounts? How does it work?",
+    desc: `We are not here to be a distraction, we are here to eliminate them. Sharing your email and phone number always ends up with a bunch of marketing junk mail you never wanted. We assign you a user ID when you download our app, your subscription and purchase information is tied to Apple In-App-Payments`,
+  },
+  {
+    id: 7,
+    title: "I need help. What do I do?",
+    desc: `You can reach us by email at thecorephonesocials@gmail.com! Make sure to copy/paste the user ID found in the help screen of the Core Phone app.`,
   },
 ];
 
@@ -67,37 +77,43 @@ export default function Home() {
               <h2 className="text-4xl font-semibold text-brand">features</h2>
               <div className="flex flex-col gap-2">
                 <p className="text-lg">
-                  Hide Addictive and Distracting Apps from your Phone
+                  Hide Addictive and Distracting Apps from your iPhone
                 </p>
                 <p className="text-lg">
                   Lock your Phone in a Minimalist state*
                 </p>
                 <p className="text-lg">
-                  Have a Friend lock your Phone with a PIN*
+                  Have a Friend lock your Core Phone with a PIN*
                 </p>
                 <p className="text-lg">
                   Use a{" "}
                   <strong className="font-semibold text-brand">
                     Core Card
                   </strong>{" "}
-                  to lock your Phone*
+                  to lock your Core Phone*
                 </p>
                 <p className="text-lg">
-                  Set a timer to lock your Phone until that date/time*
+                  Set a timer to lock your Core Phone until that date/time*
                 </p>
+                <p className="text-lg">Anonymous Account / No Sign Up</p>
                 <p className="text-lg">Designed simply to mimic a utility</p>
                 <p className="text-sm mt-2">
-                  *Some features are only available for CorePhone+*
+                  *Some features are only available for CorePhone+
                 </p>
               </div>
               <h2 className="text-4xl font-semibold text-brand mt-4">why?</h2>
               <div className="flex flex-col gap-2 max-w-[768px]">
-                <p className="text-md">{`As a Software Engineer, I have seen firsthand the negative impacts of the smartphone. Screen addiction is real, and it takes you away from the life you want to live. If you're like me, you've tried to minimalize your iPhone and it never sticks. Or maybe you've tried some of the popular "dumb phones", but they made easy things (like texting and calling) hard.`}</p>
-                <p className="text-md">{`That's why I created The Core Phone app. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your phone with a PIN, or by locking with a Core Card and leaving it behind, but you never have to give up control to big tech again.`}</p>
+                <p className="text-md">{`Screen addiction is real, and it takes you away from the life you want to live. Maybe you've tried to minimalize your iPhone and it never sticks. Or maybe you've tried some of the popular "dumb phones", but they made easy things (like texting and calling) hard.`}</p>
+                <p className="text-md">{`That's why The Core Phone app exists. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your Core Phone with a PIN, by locking with a Core Card and leaving it behind, locking with a timer, but you never have to give up control to big tech again.`}</p>
               </div>
-              <button className="bg-brand text-white font-semibold rounded-lg px-6 py-4 w-full mt-8">
-                Get the App
-              </button>
+              <div className="flex flex-col gap-8 mt-8 items-center">
+                <button className="bg-brand text-white font-semibold rounded-lg px-6 py-4 w-full">
+                  Get the App
+                </button>
+                <a href="#" className="">
+                  <img src="App-Store-Black.png" alt="Apple App Store Button" />
+                </a>
+              </div>
             </div>
             <div className="hidden md:block md:min-w-[400px]">
               <div className="mockup-phone border-brand">
@@ -201,6 +217,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <p className="text-sm mt-4">
+              The Core Card is supplied by{" "}
+              <a
+                href="https://taptag.shop?sca_ref=6340235.ACzs4PsiSY"
+                className="underline"
+              >
+                Tap Tag
+              </a>
+            </p>
             {/* <div className="flex gap-8 md:grid md:grid-cols-2">
               <img
                 src={`https://taptag.shop/cdn/shop/products/sustainable-cherry-nfc-business-card-194915.jpg?v=1695228186&width=800`}
@@ -243,6 +268,8 @@ export default function Home() {
       <section className="main-bg p-8 text-white">
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
           <div className="flex flex-col gap-4 items-center text-center">
+            <img src="ditch2.png" className="md:hidden my-16" />
+            <img src="ditch.png" className="hidden md:block my-16" />
             <h2 className="text-brand font-semibold text-2xl">
               connect with us
             </h2>
