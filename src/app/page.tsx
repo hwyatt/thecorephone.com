@@ -76,6 +76,7 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <h2 className="text-4xl font-semibold text-brand">features</h2>
               <div className="flex flex-col gap-2">
+                <p className="text-lg">Turn your iPhone into a dumb phone</p>
                 <p className="text-lg">
                   Hide Addictive and Distracting Apps from your iPhone
                 </p>
