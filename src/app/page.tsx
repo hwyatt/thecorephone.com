@@ -222,6 +222,7 @@ export default function Home() {
               <a
                 href="https://taptag.shop?sca_ref=6340235.ACzs4PsiSY"
                 className="underline"
+                target="_blank"
               >
                 Tap Tag
               </a>
