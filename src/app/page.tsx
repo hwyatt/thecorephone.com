@@ -72,7 +72,7 @@ export default function Home() {
 
       <section className="pt-16 pb-16 main-bg text-gray-800">
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
-          <div className="flex gap-16">
+          <div className="flex flex-col flex-col-reverse md:flex-row gap-16">
             <div className="flex flex-col gap-4">
               <h2 className="text-4xl font-semibold text-brand">features</h2>
               <div className="flex flex-col gap-2">
@@ -116,7 +116,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="">
               {/* <video autoPlay muted loop className="">
                 <source src="/app-preview.mp4" type="video/mp4" />
               </video> */}
