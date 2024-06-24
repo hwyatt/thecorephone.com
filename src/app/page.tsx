@@ -5,7 +5,7 @@ const FAQs = [
   {
     id: 0,
     title: "What happens when I turn Core Phone on?",
-    desc: `We use technology native to Apple iOS to hide apps from your phone. Hiding apps is simply just that. Whenever you turn Core Phone off, all of your app data is still intact. *Note that because of an open issue with Apple that your apps may not return to their original folder or dock location after unhiding them. For best results, we recommend relying more heavily on the app library rather than folders, and not using widgets for apps you plan to hide.`,
+    desc: `We use technology native to Apple iOS to hide apps from your phone. Hiding apps is simply just that. Whenever you turn Core Phone off, all of your app data is still intact.`,
   },
   {
     id: 1,
