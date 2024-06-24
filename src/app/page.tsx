@@ -36,7 +36,7 @@ const FAQs = [
   {
     id: 6,
     title: "Why Anonymous Accounts? How does it work?",
-    desc: `We are not here to be a distraction, we are here to eliminate them. Sharing your email and phone number always ends up with a bunch of marketing junk mail you never wanted. We assign you a user ID when you download our app, your subscription and purchase information is tied to Apple In-App-Payments`,
+    desc: `We are not here to be a distraction, we are here to eliminate them. Sharing your email and phone number always ends up with a bunch of marketing junk mail you never wanted. We assign you a user ID when you download our app, your purchase information is tied to Apple In-App-Payments`,
   },
   {
     id: 7,
@@ -88,9 +88,9 @@ export default function Home() {
                 </p>
                 <p className="text-lg">
                   Use a{" "}
-                  <strong className="font-semibold text-brand">
+                  <a href="#core-card" className="font-semibold text-brand">
                     Core Card
-                  </strong>{" "}
+                  </a>{" "}
                   to lock your Core Phone*
                 </p>
                 <p className="text-lg">
@@ -116,20 +116,19 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="hidden md:block md:min-w-[400px]">
-              <div className="mockup-phone border-brand">
-                <div className="camera"></div>
-                <div className="display">
-                  <div className="artboard artboard-demo phone-4">
-                    <img src="/test.png" />
-                  </div>
-                </div>
-              </div>
+            <div className="hidden md:block">
+              {/* <video autoPlay muted loop className="">
+                <source src="/app-preview.mp4" type="video/mp4" />
+              </video> */}
+              <img src="/app-preview.gif" />
             </div>
           </div>
         </div>
       </section>
-      <section className="pt-16 pb-16 main-bg text-gray-800 border-brand border-t-4">
+      <section
+        className="pt-16 pb-16 main-bg text-gray-800 border-brand border-t-4"
+        id="core-card"
+      >
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
           <div className="flex flex-col gap-4 items-center">
             <h2 className="text-4xl font-semibold text-brand mb-4">
