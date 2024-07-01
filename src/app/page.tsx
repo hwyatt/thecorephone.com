@@ -108,9 +108,12 @@ export default function Home() {
                 <p className="text-md">{`That's why The Core Phone app exists. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your Core Phone with a PIN, by locking with a Core Card and leaving it behind, locking with a timer, but you never have to give up control to big tech again.`}</p>
               </div>
               <div className="flex flex-col gap-8 mt-8 items-center">
-                <button className="bg-brand text-white font-semibold rounded-lg px-6 py-4 w-full">
+                <a
+                  href="#"
+                  className="bg-brand text-white font-semibold rounded-lg px-6 py-4 w-full flex items-center justify-center"
+                >
                   Get the App
-                </button>
+                </a>
                 <a href="#" className="">
                   <img src="App-Store-Black.png" alt="Apple App Store Button" />
                 </a>
@@ -143,7 +146,7 @@ export default function Home() {
               the constant pull of digital distractions.
             </p>
             <div className="flex flex-col md:flex-row justify-between gap-8">
-              <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
+              <div className="card md:w-96 bg-base-100 shadow-xl rounded-t-lg">
                 <figure
                   className="border-brand border-t-4 border-x-4"
                   style={{
@@ -177,7 +180,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="card w-96 bg-base-100 shadow-xl rounded-t-lg">
+              <div className="card md:w-96 bg-base-100 shadow-xl rounded-t-lg">
                 <figure
                   className="border-brand border-t-4 border-x-4"
                   style={{
@@ -244,7 +247,7 @@ export default function Home() {
         </div>
       </section>
       <section className="p-8 bg-brand text-white">
-        <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
+        <div className="container mx-auto max-w-[1280px]">
           <div className="flex flex-col gap-4 items-center text-center">
             <h2 className="text-4xl font-semibold text-white mb-4">faqs</h2>
             {FAQs.map((faq) => {
@@ -293,8 +296,8 @@ export default function Home() {
               </span>
             </div>
             <div className="flex gap-4">
-              <a href="/terms" className="hover:text-gray-600">
-                Terms of Use
+              <a href="/privacy" className="hover:text-gray-600">
+                Privacy Policy
               </a>
               <div className="md:hidden text-gray-400">|</div>
               <a
