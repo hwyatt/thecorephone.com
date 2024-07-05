@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
-import { SocialIcon } from "react-social-icons";
+import { useState } from "react";
+// import { SocialIcon } from "react-social-icons";
 
 const FAQs = [
   {
@@ -47,6 +49,38 @@ const FAQs = [
 
 export default function Home() {
   const currentYear = new Date().getFullYear();
+  const [success, setSuccess] = useState(false);
+
+  async function sendEmailToGoogleScript(email: string) {
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycby8noE69vbAruyx_Qlf-iwi0hpf5PnCfnE1JZ-PQ5afiRBcdZfAhd_TKOtyBdFpruoY/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+          email: email,
+        }),
+      }
+    );
+
+    const data = await response.text();
+    return data;
+  }
+
+  async function handleFormSubmit(event: any) {
+    event.preventDefault();
+    const email = event.target.email.value;
+
+    try {
+      const result = await sendEmailToGoogleScript(email);
+      console.log(result); // Output the response from the script
+      setSuccess(true);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
 
   return (
     <div className="main-bg">
@@ -108,15 +142,43 @@ export default function Home() {
                 <p className="text-md">{`That's why The Core Phone app exists. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your Core Phone with a PIN, by locking with a Core Card and leaving it behind, locking with a timer, but you never have to give up control to big tech again.`}</p>
               </div>
               <div className="flex flex-col gap-8 mt-8 items-center">
-                <a
+                {!success ? (
+                  <form
+                    onSubmit={handleFormSubmit}
+                    className="flex flex-col gap-8 w-full"
+                  >
+                    <div className="flex flex-col gap-2 w-full">
+                      <label className="font-semibold text-brand">
+                        Sign up for email updates
+                      </label>
+                      <input
+                        className="bg-white rounded-lg h-12 px-4 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
+                        type="email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                    <button
+                      className="bg-brand text-white font-semibold rounded-lg px-6 py-4 w-full flex items-center justify-center"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                ) : (
+                  <span className="font-semibold text-brand">
+                    Thanks! We will send updates to you via email
+                  </span>
+                )}
+                {/* <a
                   href="#"
                   className="bg-brand text-white font-semibold rounded-lg px-6 py-4 w-full flex items-center justify-center"
                 >
                   Get the App
-                </a>
-                <a href="#" className="">
+                </a> */}
+                {/* <a href="#" className="">
                   <img src="App-Store-Black.png" alt="Apple App Store Button" />
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="">
@@ -128,7 +190,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
+      {/* <section
         className="pt-16 pb-16 main-bg text-gray-800 border-brand border-t-4"
         id="core-card"
       >
@@ -230,23 +292,10 @@ export default function Home() {
                 Tap Tag
               </a>
             </p>
-            {/* <div className="flex gap-8 md:grid md:grid-cols-2">
-              <img
-                src={`https://taptag.shop/cdn/shop/products/sustainable-cherry-nfc-business-card-194915.jpg?v=1695228186&width=800`}
-              
-                alt="the core phone logo"
-              />
-              <div className="flex flex-col justify-between">
-              <p className="text-brand text-lg">
-                The Core Card is designed to curb digital addiction and encourage real-life experiences. It locks The Core Phone app, hiding addictive and distracting apps, ensuring you stay in the moment. This lock can only be released with the Core Card, allowing you to leave the card behind and fully immerse yourself in life without the constant pull of digital distractions.
-              </p>
-              <button className="bg-brand w-full p-6 font-semibold text-white">Order Now</button>
-              </div>
-            </div> */}
           </div>
         </div>
-      </section>
-      <section className="p-8 bg-brand text-white">
+      </section> */}
+      {/* <section className="p-8 bg-brand text-white">
         <div className="container mx-auto max-w-[1280px]">
           <div className="flex flex-col gap-4 items-center text-center">
             <h2 className="text-4xl font-semibold text-white mb-4">faqs</h2>
@@ -268,8 +317,8 @@ export default function Home() {
             })}
           </div>
         </div>
-      </section>
-      <section className="main-bg p-8 text-white">
+      </section> */}
+      {/* <section className="main-bg p-8 text-white">
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
           <div className="flex flex-col gap-4 items-center text-center">
             <img src="ditch2.png" className="md:hidden my-16" />
@@ -309,7 +358,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
