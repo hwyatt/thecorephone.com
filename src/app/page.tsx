@@ -1,18 +1,28 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-// import { SocialIcon } from "react-social-icons";
+import { SocialIcon } from "react-social-icons";
 
 const FAQs = [
   {
     id: 0,
     title: "What happens when I turn Core Phone on?",
-    desc: `We use technology native to Apple iOS to hide apps from your phone. Hiding apps is simply just that. Whenever you turn Core Phone off, all of your app data is still intact.`,
+    desc: `We use technology native to Apple iOS to restrict apps on your phone. When you try to open an app it will return a message saying it is restricted. Whenever you turn CorePhone off, all of your app data is still intact and you can access those apps again.`,
   },
   {
     id: 1,
     title: "What is CorePhone+?",
-    desc: `CorePhone+ is our affordable subscription service that allows you to hide up to 50 apps and lock your phone in Core mode with a PIN, a Core Card, or until a certain date/time. You can also order The Core Card and customizeable tags.`,
+    desc: `CorePhone+ is our affordable subscription service that allows you to lock your phone in Core mode with a PIN, a Core Card, or until a certain date/time. You can also order The Core Card and customizeable tags.`,
+  },
+  {
+    id: 9,
+    title: "Do I have to subscribe?",
+    desc: `Not at all! The app restricting feature is free forever. If you love it, and want to lock your device in that state - then you can choose to upgrade.`,
+  },
+  {
+    id: 8,
+    title: "Can CorePhone Restrict All Apps?",
+    desc: `It's our goal to restrict everything but the essentials (Phone, Messages) - some system applications however, like Settings, cannot be restricted.`,
   },
   {
     id: 2,
@@ -38,7 +48,7 @@ const FAQs = [
   {
     id: 6,
     title: "Why Anonymous Accounts? How does it work?",
-    desc: `We are not here to be a distraction, we are here to eliminate them. Sharing your email and phone number always ends up with a bunch of marketing junk mail you never wanted. We assign you a user ID when you download our app, your purchase information is tied to Apple In-App-Payments`,
+    desc: `We are not here to be a distraction, we are here to eliminate them. Sharing your email and phone number always ends up with a bunch of marketing junk mail you never wanted. We are able to provide this service with no sign up required.`,
   },
   {
     id: 7,
@@ -112,7 +122,7 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <p className="text-lg">Turn your iPhone into a dumb phone</p>
                 <p className="text-lg">
-                  Hide Addictive and Distracting Apps from your iPhone
+                  Restrict Addictive and Distracting Apps
                 </p>
                 <p className="text-lg">
                   Lock your Phone in a Minimalist state*
@@ -142,7 +152,7 @@ export default function Home() {
                 <p className="text-md">{`That's why The Core Phone app exists. Your phone was meant to serve you, not the other way around. With The Core Phone, you are in control of what apps are accessible at any given time. You can give up control by letting a friend lock your Core Phone with a PIN, by locking with a Core Card and leaving it behind, locking with a timer, but you never have to give up control to big tech again.`}</p>
               </div>
               <div className="flex flex-col gap-8 mt-8 items-center">
-                {!success ? (
+                {/* {!success ? (
                   <form
                     onSubmit={handleFormSubmit}
                     className="flex flex-col gap-8 w-full"
@@ -169,28 +179,28 @@ export default function Home() {
                   <span className="font-semibold text-brand">
                     Thanks! We will send updates to you via email
                   </span>
-                )}
-                {/* <a
+                )} */}
+                <a
                   href="#"
                   className="bg-brand text-white font-semibold rounded-lg px-6 py-4 w-full flex items-center justify-center"
                 >
                   Get the App
-                </a> */}
-                {/* <a href="#" className="">
+                </a>
+                <a href="#" className="">
                   <img src="App-Store-Black.png" alt="Apple App Store Button" />
-                </a> */}
+                </a>
               </div>
             </div>
             <div className="">
               {/* <video autoPlay muted loop className="">
                 <source src="/app-preview.mp4" type="video/mp4" />
               </video> */}
-              <img src="/app-preview.gif" />
+              <img src="/app-previewV2.gif" />
             </div>
           </div>
         </div>
       </section>
-      {/* <section
+      <section
         className="pt-16 pb-16 main-bg text-gray-800 border-brand border-t-4"
         id="core-card"
       >
@@ -201,7 +211,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-800 text-center mb-4">
               The Core Card is designed to curb digital addiction and encourage
-              real-life experiences. It locks The Core Phone app, hiding
+              real-life experiences. It locks The Core Phone app, restricting
               addictive and distracting apps, ensuring you stay in the moment.
               This lock can only be released with the Core Card, allowing you to
               leave the card behind and fully immerse yourself in life without
@@ -294,8 +304,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section> */}
-      {/* <section className="p-8 bg-brand text-white">
+      </section>
+      <section className="p-8 bg-brand text-white">
         <div className="container mx-auto max-w-[1280px]">
           <div className="flex flex-col gap-4 items-center text-center">
             <h2 className="text-4xl font-semibold text-white mb-4">faqs</h2>
@@ -317,8 +327,8 @@ export default function Home() {
             })}
           </div>
         </div>
-      </section> */}
-      {/* <section className="main-bg p-8 text-white">
+      </section>
+      <section className="main-bg p-8 text-white">
         <div className="container mx-auto max-w-[1280px] px-4 md:px-8">
           <div className="flex flex-col gap-4 items-center text-center">
             <img src="ditch2.png" className="md:hidden my-16" />
@@ -358,7 +368,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
